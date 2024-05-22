@@ -1,0 +1,170 @@
+.user_navbar_background {
+    .user_navbar_contain {
+        width: 100%;
+        // height: 80px;
+        // background-color: red;
+        display: flex;
+        padding: 2rem 150px;
+
+        .user_navbar_left {
+            width: 50%;
+            // height: 80px;
+            // background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+
+            div {
+                width: 10%;
+                height: 40px;
+                // background-color: palegoldenrod;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    // object-fit: cover;
+                }
+            }
+
+        }
+
+        .user_navbar_right {
+            // height: 80px;
+            width: 50%;
+            // background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .user_li {
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 40px;
+
+                    li {
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 600;
+
+                        a {
+                            color: black;
+                            font-size: 17px;
+                            text-transform: uppercase;
+                        }
+
+                        i {
+                            font-size: 20px;
+                            padding-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .bars_div {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .user_navbar_background {
+        .user_navbar_contain {
+            width: 100%;
+
+            padding: 1rem 50px;
+
+            .user_navbar_left {
+
+                div {
+                    width: 20%;
+                    height: 30px;
+                }
+
+            }
+
+            .user_navbar_right {
+                // height: 80px;
+                width: 50%;
+                // background-color: blue;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .user_li {
+                    display: none;
+
+                }
+            }
+
+            .bars_div {
+                display: flex;
+                width: 50%;
+                align-items: center;
+                justify-content: end;
+                
+                i {
+                    font-size: 20px;
+                    border: 1px solid black;
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+}
+.user_navbar_background .user_navbar_contain .user_navbar_right .bars_div{
+    display: flex;
+}
+
+@media only screen and (max-width: 400px) {
+    .user_navbar_background {
+        .user_navbar_contain {
+            width: 100%;
+
+            padding: 0.5rem 30px;
+
+            .user_navbar_left {
+
+                div {
+                    width: 50%;
+                    height: 20px;
+                }
+
+            }
+
+            .user_navbar_right {
+                // height: 80px;
+                width: 50%;
+                // background-color: blue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .user_li {
+                    display: none;
+
+                }
+
+                .bars_div {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+
+                    i {
+                        font-size: 15px;
+                        border: 1px solid black;
+                        padding: 0.3rem 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
